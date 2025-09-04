@@ -1,0 +1,29 @@
+{
+  "name": "cypress-training",
+  "version": "15.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "npx cypress open --e2e --browser chrome",
+    "cy:run": "npx cypress run --browser chrome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aziguy/cypress-training.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Aziguy/cypress-training/issues"
+  },
+  "homepage": "https://github.com/Aziguy/cypress-training#readme",
+  "devDependencies": {
+    "@cypress/webpack-dev-server": "^5.1.1",
+    "@types/node": "^24.3.1",
+    "cypress": "^15.1.0",
+    "typescript": "^5.9.2"
+  }
+}

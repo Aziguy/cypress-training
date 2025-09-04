@@ -1,0 +1,12 @@
+.DS_Store
+**/.DS_Store
+node_modules
+/cypress/downloads/
+.idea
+/cypress/fixtures/data/
+/cypress/fixtures/export
+/cypress/fixtures/rapport
+/cypress/videos/
+/cypress/screenshots/
+/cypress/reports/
+/cypress/rapport/
