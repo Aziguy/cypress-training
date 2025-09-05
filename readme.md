@@ -1,4 +1,3 @@
-
 ### `README.md` – Cypress + TypeScript Project
 
 # 🚀 End-to-End Testing with Cypress + TypeScript
@@ -24,7 +23,7 @@ project-root/
 ├── package.json
 └── README.md
 
-````
+```
 
 ---
 
@@ -48,7 +47,7 @@ cd cypress-ts-e2e
 npm install
 # or
 yarn install
-````
+```
 
 ---
 
@@ -147,27 +146,27 @@ Cypress.Commands.add("login", () => {
 
 ## 🧠 Tips
 
-* ✅ Use `/// <reference types="cypress" />` at the top of spec files for IntelliSense.
-* ✅ Group tests logically in folders (`auth`, `dashboard`, etc.)
-* ✅ Use `cy.intercept()` to mock API calls if needed
-* ✅ Use `.only` or `.skip` to focus or ignore a test
+- ✅ Use `/// <reference types="cypress" />` at the top of spec files for IntelliSense.
+- ✅ Group tests logically in folders (`auth`, `dashboard`, etc.)
+- ✅ Use `cy.intercept()` to mock API calls if needed
+- ✅ Use `.only` or `.skip` to focus or ignore a test
 
 ---
 
 ## ✅ Best Practices
 
-* Use data-\* attributes for stable selectors (`cy.get('[data-cy=login-button]')`)
-* Keep tests atomic and independent
-* Avoid relying on internal implementation details
-* Use `beforeEach()` for repeated setup logic
+- Use data-\* attributes for stable selectors (`cy.get('[data-cy=login-button]')`)
+- Keep tests atomic and independent
+- Avoid relying on internal implementation details
+- Use `beforeEach()` for repeated setup logic
 
 ---
 
 ## 🔗 Resources
 
-* [Cypress Documentation](https://docs.cypress.io/)
-* [TypeScript Docs](https://www.typescriptlang.org/)
-* [Testing Best Practices](https://testingjavascript.com/)
+- [Cypress Documentation](https://docs.cypress.io/)
+- [TypeScript Docs](https://www.typescriptlang.org/)
+- [Testing Best Practices](https://testingjavascript.com/)
 
 ---
 

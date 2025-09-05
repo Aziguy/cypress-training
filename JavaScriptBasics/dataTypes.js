@@ -16,19 +16,19 @@
 // --------------------
 // Number
 // --------------------
-let num1 = 30;           // Integer
-let num2 = 1.333;        // Float
+let num1 = 30; // Integer
+let num2 = 1.333; // Float
 let negative = -42;
 console.log("Number examples:", num1, num2, negative); // 30 1.333 -42
 
 // Special numeric values
-console.log("Infinity:", 1 / 0);             // Infinity
+console.log("Infinity:", 1 / 0); // Infinity
 console.log("NaN (Not a Number):", "abc" / 3); // NaN
 
 // --------------------
 // String
 // --------------------
-let myCity = 'Hanoï'; // Single quotes
+let myCity = "Hanoï"; // Single quotes
 let greeting = "Hello"; // Double quotes
 let welcomeMessage = `Welcome to ${myCity}`; // Template literal
 console.log("String examples:", myCity, greeting, welcomeMessage);
@@ -127,16 +127,16 @@ console.log("Set:", set); // {1, 2, 3}
  * 3. typeof Operator Summary
  */
 console.log("\n🧪 typeof results:");
-console.log("typeof 123:", typeof 123);                 // number
-console.log("typeof 'abc':", typeof "abc");             // string
-console.log("typeof true:", typeof true);               // boolean
-console.log("typeof undefined:", typeof undefined);     // undefined
-console.log("typeof null:", typeof null);               // object (quirk)
-console.log("typeof Symbol():", typeof Symbol());       // symbol
-console.log("typeof 10n:", typeof 10n);                 // bigint
-console.log("typeof {}:", typeof {});                   // object
-console.log("typeof []:", typeof []);                   // object
-console.log("typeof function(){}:", typeof function(){}); // function
+console.log("typeof 123:", typeof 123); // number
+console.log("typeof 'abc':", typeof "abc"); // string
+console.log("typeof true:", typeof true); // boolean
+console.log("typeof undefined:", typeof undefined); // undefined
+console.log("typeof null:", typeof null); // object (quirk)
+console.log("typeof Symbol():", typeof Symbol()); // symbol
+console.log("typeof 10n:", typeof 10n); // bigint
+console.log("typeof {}:", typeof {}); // object
+console.log("typeof []:", typeof []); // object
+console.log("typeof function(){}:", typeof function () {}); // function
 
 /**
  * 🔍 Summary of JavaScript Data Types:

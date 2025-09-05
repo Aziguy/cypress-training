@@ -82,7 +82,7 @@ console.log("\n for...in loop:");
 const person = {
   name: "Alice",
   age: 25,
-  gender: "female"
+  gender: "female",
 };
 
 for (const key in person) {
@@ -101,7 +101,7 @@ for (const index in fruits) {
 console.log("\n forEach loop:");
 const animals = ["dog", "cat", "rabbit"];
 
-animals.forEach(function(animal, index) {
+animals.forEach(function (animal, index) {
   console.log(`Animal ${index + 1}: ${animal}`);
 });
 
@@ -152,4 +152,3 @@ for (let i = 1; i <= 2; i++) {
  * break — exit the loop early
  * continue — skip current iteration
  */
-

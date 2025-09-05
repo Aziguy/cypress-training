@@ -23,7 +23,7 @@ greet("Alice"); // Calling the function
 // ------------------------------
 console.log("\n Function Expression:");
 
-const sayGoodbye = function(name) {
+const sayGoodbye = function (name) {
   console.log(`Goodbye, ${name}!`);
 };
 
@@ -60,8 +60,8 @@ function greetWithDefault(name = "Guest") {
   console.log(`Welcome, ${name}!`);
 }
 
-greetWithDefault();         // Welcome, Guest!
-greetWithDefault("Sara");    // Welcome, Sara!
+greetWithDefault(); // Welcome, Guest!
+greetWithDefault("Sara"); // Welcome, Sara!
 
 // ------------------------------
 // 5. Return Statement
@@ -82,8 +82,8 @@ function outer() {
   };
 }
 
-const innerFunc = outer();  // outer() returns inner()
-innerFunc();                // I'm an inner function!
+const innerFunc = outer(); // outer() returns inner()
+innerFunc(); // I'm an inner function!
 
 // ------------------------------
 // 6. Function Scope & Closures
@@ -96,14 +96,14 @@ function outerScope() {
   let outerVar = "I am from the outer scope";
 
   function innerScope() {
-    console.log(globalVar);  // Accessing global variable
-    console.log(outerVar);   // Accessing outer function's variable
+    console.log(globalVar); // Accessing global variable
+    console.log(outerVar); // Accessing outer function's variable
   }
 
   innerScope();
 }
 
-outerScope();  // Global and outer variable are accessible within inner function
+outerScope(); // Global and outer variable are accessible within inner function
 
 // ------------------------------
 // 7. Higher-Order Functions
@@ -132,7 +132,7 @@ function multiplier(factor) {
 }
 
 const double = multiplier(2);
-console.log("Double 5:", double(5));  // 10
+console.log("Double 5:", double(5)); // 10
 
 // ------------------------------
 // 8. Function Expressions and IIFE (Immediately Invoked Function Expression)
@@ -161,4 +161,3 @@ console.log("\n IIFE (Immediately Invoked Function Expression):");
  * Higher-Order Functions: Functions that take functions as arguments or return them
  * IIFE (Immediately Invoked Function Expressions): Functions that run immediately after creation
  */
-

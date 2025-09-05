@@ -110,11 +110,11 @@ let combined = letters.concat(["z", "y"]);
 console.log("Concatenated:", combined);
 
 // map
-let upper = fruits.map(f => f.toUpperCase());
+let upper = fruits.map((f) => f.toUpperCase());
 console.log("Mapped to uppercase:", upper);
 
 // filter
-let longFruits = fruits.filter(f => f.length > 5);
+let longFruits = fruits.filter((f) => f.length > 5);
 console.log("Filtered (>5 chars):", longFruits);
 
 // reduce
@@ -127,7 +127,7 @@ console.log("Reduced sum:", sum); // 60
 // ------------------------------
 let matrix = [
   [1, 2],
-  [3, 4]
+  [3, 4],
 ];
 console.log("\n Nested array (matrix):", matrix);
 console.log("Element at [1][0]:", matrix[1][0]); // 3
@@ -153,4 +153,3 @@ console.log("Array.isArray(fruits):", Array.isArray(fruits)); // true
  * indexOf(), includes(), join()
  * concat()
  */
-

@@ -51,7 +51,7 @@ console.log("\nconst myGender:", myGender); // Male
  */
 const user = {
   name: "Alice",
-  age: 30
+  age: 30,
 };
 console.log("\nconst object user:", user);
 

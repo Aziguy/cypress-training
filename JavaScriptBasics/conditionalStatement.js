@@ -5,7 +5,7 @@
 /**
  * Conditional statements are used to perform different actions
  * based on different conditions.
- * 
+ *
  * JavaScript supports:
  * - if
  * - if...else
@@ -98,14 +98,12 @@ switch (day) {
 
 let number = 10;
 
-let result = (number % 2 === 0) ? "Even" : "Odd";
+let result = number % 2 === 0 ? "Even" : "Odd";
 console.log("Ternary result:", result); // Even
 
 // Nested ternary (not recommended for complex logic)
 let mark = 85;
-let grade = mark >= 90 ? "A" :
-            mark >= 80 ? "B" :
-            mark >= 70 ? "C" : "F";
+let grade = mark >= 90 ? "A" : mark >= 80 ? "B" : mark >= 70 ? "C" : "F";
 console.log("Nested Ternary Grade:", grade); // B
 
 // ===========================

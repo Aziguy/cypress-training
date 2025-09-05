@@ -16,7 +16,7 @@ console.log(" Object Basics");
 const person = {
   name: "Alice",
   age: 30,
-  isAdmin: false
+  isAdmin: false,
 };
 
 console.log("Person object:", person);
@@ -26,20 +26,20 @@ console.log("Person object:", person);
 // ------------------------------
 console.log("\n Accessing properties:");
 
-console.log("Name (dot):", person.name);       // Alice
-console.log("Age (bracket):", person["age"]);  // 30
+console.log("Name (dot):", person.name); // Alice
+console.log("Age (bracket):", person["age"]); // 30
 
 // Bracket notation allows dynamic property names:
 let key = "isAdmin";
-console.log("Dynamic access:", person[key]);   // false
+console.log("Dynamic access:", person[key]); // false
 
 // ------------------------------
 // 3. Modifying and adding properties
 // ------------------------------
 console.log("\n Modifying & adding:");
 
-person.age = 31;                    // modify
-person.country = "France";          // add new
+person.age = 31; // modify
+person.country = "France"; // add new
 console.log("Updated person:", person);
 
 // ------------------------------
@@ -58,12 +58,12 @@ const user = {
   },
   shout() {
     console.log(`${this.username.toUpperCase()}!!!`);
-  }
+  },
 };
 
 console.log("\n Object with methods:");
-user.greet();   // Hello, I'm john_doe
-user.shout();   // JOHN_DOE!!!
+user.greet(); // Hello, I'm john_doe
+user.shout(); // JOHN_DOE!!!
 
 // ------------------------------
 // 6. Nested Objects
@@ -73,8 +73,8 @@ const employee = {
   position: "Engineer",
   contact: {
     email: "sara@example.com",
-    phone: "123-456-7890"
-  }
+    phone: "123-456-7890",
+  },
 };
 
 console.log("\n Nested object:");
@@ -104,8 +104,8 @@ const keys = Object.keys(person);
 const values = Object.values(person);
 const entries = Object.entries(person);
 
-console.log("Keys:", keys);       // ['name', 'age', 'country']
-console.log("Values:", values);   // ['Alice', 31, 'France']
+console.log("Keys:", keys); // ['name', 'age', 'country']
+console.log("Values:", values); // ['Alice', 31, 'France']
 console.log("Entries:", entries); // [['name', 'Alice'], ['age', 31], ['country', 'France']]
 
 entries.forEach(([key, value]) => {
@@ -119,11 +119,11 @@ console.log("\n Destructuring:");
 
 const { name, age } = person;
 console.log("Name:", name); // Alice
-console.log("Age:", age);   // 31
+console.log("Age:", age); // 31
 
 // Nested destructuring
 const {
-  contact: { email, phone }
+  contact: { email, phone },
 } = employee;
 console.log("Email:", email);
 console.log("Phone:", phone);
@@ -168,4 +168,3 @@ console.log("obj1 === obj3:", obj1 === obj3); // true
  * Use spread (...) or Object.assign() to copy
  * Object comparison is by reference
  */
-
