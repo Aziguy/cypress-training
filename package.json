@@ -6,7 +6,25 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cy:open": "npx cypress open --e2e --browser chrome",
-    "cy:run": "npx cypress run --browser chrome"
+    "cy:run": "npx cypress run --browser chrome",
+    "lint": "eslint 'src/**/*.{ts,tsx,js,jsx}' 'cypress/**/*.ts'",
+    "lint:fix": "eslint --fix 'src/**/*.{ts,tsx,js,jsx}' 'cypress/**/*.ts'",
+    "format": "prettier --write .",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{ts,tsx, js}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,css,html}": [
+      "prettier --write"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   },
   "repository": {
     "type": "git",
@@ -21,9 +39,21 @@
   },
   "homepage": "https://github.com/Aziguy/cypress-training#readme",
   "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
     "@cypress/webpack-dev-server": "^5.1.1",
     "@types/node": "^24.3.1",
+    "@typescript-eslint/eslint-plugin": "^8.42.0",
+    "@typescript-eslint/parser": "^8.42.0",
+    "commitizen": "^4.3.1",
     "cypress": "^15.1.0",
+    "cz-conventional-changelog": "^3.0.1",
+    "eslint": "^9.35.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-cypress": "^5.1.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.6",
+    "prettier": "^3.6.2",
     "typescript": "^5.9.2"
   }
 }
