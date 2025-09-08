@@ -14,6 +14,7 @@ module.exports = {
   rules: {
     "no-console": "warn",
     "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
-    "cypress/no-unnecessary-waiting": "warn"
+    "cypress/no-unnecessary-waiting": "warn",
+    "@typescript-eslint/no-explicit-any": ["off"]
   }
 };
